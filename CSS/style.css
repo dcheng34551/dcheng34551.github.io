@@ -1,3 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: dodgerblue;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-container header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+
+/* logo */
+
+.nav-container header .logo {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.nav-container header a .logo-rest {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 0.6rem;
+  position: relative;
+  color: #626262;
+}
+
+.nav-container header a .logo-rest::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #ffb624;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.8rem;
+  left: 4.2rem;
+}
+
+.nav-container header a .logo-D {
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #ffb624;
+}
+
+.nav-container header a .logo-C {
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #afe2ff;
+}
+
+/* logo-end */
+
+.nav-container header ul {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1.7rem;
+  list-style-type: none;
+}
+
+.nav-container header ul li a {
+  list-style-type: none;
+  margin-right: 1.7rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #626262;
+  text-decoration: none;
+}
+
+.nav-container header ul li a:hover {
+  color: #afe2ff;
+}
+
+.social-header {
+  display: none;
+}
+
+.hero {
+  background: #efefef;
+  padding: 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #626262;
+  margin-bottom: 2rem;
+}
+
+.scroll-down {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.scroll-down i {
+  color: #ffb624;
+}
+
+.scroll-down i:hover {
+  transform: scale(1.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-color: white;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-container {
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+
+  .nav-container header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-container header .logo {
+    padding-left: 4rem;
+  }
+
+  .nav-container header nav {
+    background-image: linear-gradient(90deg, transparent, #ffb624);
+  }
+
+  .nav-container header ul {
+    justify-content: space-between;
+    margin-right: 2rem;
+  }
+
+  .nav-container header ul li a {
+    margin-right: 2rem;
+  }
+
+  .social-header {
+    background-color: #ffb624;
+    display: block;
+  }
+
+  .social-header ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: -3rem;
+    float: left;
+  }
+
+  .social-header ul li {
+    margin-top: 1.5rem;
+  }
+
+  .social-header ul li a i {
+    color: black;
+    font-size: 1.4rem;
+    margin-left: 3rem;
+  }
+
+  .hero {
+    height: 93vh;
+    display: grid;
+    grid-template-columns: 60% auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero .content {
+    padding: 8rem 4rem;
+    text-align: left;
+  }
+
+  .hero .content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero .content p {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .hero .picture {
+    background-image: linear-gradient(90deg, #fff, transparent),
+      url(../images/background.jpg);
+    background-size: cover;
+  }
+
+  .scroll-down i {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
 }
